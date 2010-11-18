@@ -18,7 +18,8 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.android.mms">
+          xmlns:pluto="http://www.w3.org/2001/pluto.html"
+          package="com.android.mms">
 
     <original-package android:name="com.android.mms" />
 
@@ -44,7 +45,8 @@
             android:label="@string/app_label"
             android:icon="@drawable/ic_launcher_smsmms"
             android:taskAffinity="android.task.mms"
-            android:allowTaskReparenting="true">
+            android:allowTaskReparenting="true"
+            pluto:isThemeable="true">
 
         <service android:name=".transaction.TransactionService"
                  android:exported="true" />
